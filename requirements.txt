@@ -6,3 +6,6 @@ pymc>=5.0.0
 arviz>=0.15.0
 flask>=3.0.0
 pytest>=7.3.0
+flask>=3.0.0
+flask-cors>=4.0.0
+ruptures>=1.0.0
