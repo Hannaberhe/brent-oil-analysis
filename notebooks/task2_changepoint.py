@@ -42,3 +42,22 @@ for d in change_dates:
         print(f"  {d.date()} - near: {close_events['event'].values[0]}")
 
 print("\nDone")
+
+# Detailed event interpretation
+print("\n=== EVENT IMPACT ANALYSIS ===")
+impacts = [
+    ("1990-08-02", "Gulf War", "Prices spiked from $18 to $36 as Iraq invaded Kuwait, disrupting 4M barrels/day of production"),
+    ("2008-09-15", "Financial Crisis", "Largest crash in history: prices fell 70% from $144 to below $40 as global demand collapsed"),
+    ("2014-06-01", "Oil Price Crash", "OPEC maintained production despite oversupply; prices fell from $115 to below $30 over 18 months"),
+    ("2020-03-01", "COVID-19", "Unprecedented demand destruction: prices fell from $60 to below $20 as global lockdowns began"),
+    ("2022-02-24", "Russia-Ukraine War", "Sanctions on Russian oil pushed prices from $90 to $130; US ban on Russian imports followed"),
+]
+
+for date, event, impact in impacts:
+    print(f"\n{event} ({date}):")
+    print(f"  {impact}")
+
+print("\n=== CAUSALITY NOTE ===")
+print("These associations show temporal correlation. Multiple factors affect oil prices")
+print("simultaneously. The detected change points are statistical breaks in the series.")
+print("Connecting them to specific events requires domain expertise and is not purely statistical.")
